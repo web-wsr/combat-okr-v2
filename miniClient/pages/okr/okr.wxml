@@ -1,0 +1,15 @@
+<!--pages/okr/okr.wxml-->
+<view class="page-container">
+    <view class="todo-container">
+        <view class="todo-content">
+            <navigator  url="/pages/okr_create/okr_create" class="objective-created-btn">添加 OKR</navigator>
+        </view>
+        <view class="todo-list">
+            <view class="todo-item {{item.status === 0 ? 'completed' : ''}}" wx:key="{{item.id}}" wx:for="{{ objectives }}" data-id="{{item.id}}" data-index="{{index}}" data-status="{{item.status}}" bindtap="handleActionSheet">
+                <view class="todo-title">{{item.objective}}</view>
+                <view class="todo-time">创建时间：{{item.created_time}}</view>
+                <view class="todo-time" wx:if="{{item.completed_time}}">完成时间：{{item.completed_time}}</view>
+            </view>
+        </view>
+    </view>
+</view>

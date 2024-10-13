@@ -1,0 +1,64 @@
+/* pages/welcome/welcome.wxss */
+.welcome-container{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+.welcome-container image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.welcome-content{
+    position: absolute;
+    z-index: 1;
+    margin-top: 100rpx;
+    margin-left: 100rpx
+}
+
+.welcome-title{
+    font-size: 25px;
+    font-weight: 700;
+}
+.welcome-subtitle{
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 80rpx;
+}
+.welcome-dec view{
+    color: #666666;
+    margin-bottom: 10rpx;
+}
+.welcome-btn{
+  position: absolute;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 645rpx;
+  height: 90rpx;
+  line-height: 90rpx;
+  border-radius: 5px;
+  color: #fff;
+  background-color: #333;
+  left: 50%;
+  top: 90%;
+  transform: translate(-50%,-50%);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

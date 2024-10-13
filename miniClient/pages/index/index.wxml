@@ -1,0 +1,3 @@
+<!--index.wxml-->
+<!-- <view>项目首页</view> -->
+<button type="warn" plain bindtap="handler">测试发送请求</button>

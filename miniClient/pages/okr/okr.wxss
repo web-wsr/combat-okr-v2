@@ -1,0 +1,72 @@
+/* pages/okr/okr.wxss */
+.todo-container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .todo-container {
+    padding: 15px;
+    background-color: #fff;
+  }
+  
+  .todo-content {
+    margin-bottom: 20px;
+  }
+  
+  .objective-created-btn{
+    height: 40px;
+    line-height: 40px;
+    background: #666;
+    color: #fff;
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  
+  
+  .todo-title{
+    font-size: 16px;
+    line-height: 20px;
+    color: #333;
+    margin-bottom: 4px;
+    font-weight: 600;
+  }
+
+  .todo-item{
+    position: relative;
+    background: #f5f5f5;
+    padding: 10px;
+    margin-bottom: 5px;
+    overflow: hidden;
+  }
+  
+  .todo-item.completed:after{
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    width: 80px;
+    height: 80px;
+    border: 2px solid #999;
+    content: '完成';
+    line-height: 78px;
+    text-align: center;
+    font-size: 22px;
+    color: #999;
+    border-radius: 50%;
+    opacity: .4;
+    transform: rotate(-45deg);
+  }
+  .todo-time::before {
+    content: '';
+    display: inline-block;
+    width: 10rpx;
+    height: 10rpx;
+    transform: translateY(-5rpx);
+    margin-right: 10rpx;
+    border-radius: 50%;
+    background-color: #D7D7DB;
+  }
+  .todo-time{
+      font-size: 14px;
+      color:#999
+  }

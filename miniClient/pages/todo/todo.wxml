@@ -1,0 +1,13 @@
+<!--pages/todo/todo.wxml-->
+<view class="page-container">
+    <view class="todo-container">
+        <view class="todo-content">
+            <text class="todo-tilte">你必须做你不得不做的事</text>
+            <input class="entry-input" type="text" placeholder="请输入你需要完成的事情" value="{{value}}" bindinput="valueInput" bindconfirm="handleConfirm"  />
+        </view>
+        <view class="todo-list" wx:key="{{item.id}}" wx:for="{{todos}}"  data-id="{{item.id}}" data-index="{{index}}" bindtap="handleActionSheet">
+            <view class="todo-item">{{item.todo}}</view>
+            <view class="todo-time">创建时间：{{item.created_time}}</view>
+        </view>
+    </view>
+</view>

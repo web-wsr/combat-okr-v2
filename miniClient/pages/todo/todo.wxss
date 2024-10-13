@@ -1,0 +1,60 @@
+/* pages/todo/todo.wxss */
+.todo-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.todo-container {
+  padding: 15px;
+  background-color: #fff;
+}
+
+.todo-content {
+  margin-bottom: 20px;
+}
+
+.todo-content .todo-tilte {
+  font-size: 16px;
+  color: #e4e4e4;
+  line-height: 30px;
+}
+
+.todo-content .entry-input {
+  margin-top: 15px;
+  border: 1px solid #333;
+  height: 35px;
+  line-height: 30px;
+  padding-left: 15px;
+}
+
+.todo-list {
+  background-color: #f5f5f5;
+  margin-bottom: 15rpx;
+}
+
+.todo-time {
+  color:#BEBDBD
+}
+.todo-time::before {
+  content: '';
+  display: inline-block;
+  width: 10rpx;
+  height: 10rpx;
+  transform: translateY(-5rpx);
+  margin-right: 10rpx;
+  border-radius: 50%;
+  background-color: #D7D7DB;
+}
+
+.todo-list .todo-item {
+  font-size: 16px;
+  line-height: 35px;
+  margin-left: 20rpx;
+  font-weight: 700;
+}
+.todo-time{
+  font-size: 14px;
+  line-height: 25px;
+  margin-left: 20rpx;
+}
+

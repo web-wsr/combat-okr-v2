@@ -1,0 +1,18 @@
+<!--pages/welcome/welcome.wxml-->
+<!-- <text>pages/welcome/welcome.wxml</text> -->
+<view class="page-container">
+    <view class="welcome-container">
+        <image src="/images/手工录入 - 背景.png" mode="" />
+        <view class="welcome-content">
+            <view class="welcome-title">目标和关键成果</view>
+            <view class="welcome-subtitle">Objective and Key Result</view>
+            <view class="welcome-dec">
+                <view>目标:  我想让我的网站更好</view>
+                <view>-- 成果:  打开速度快30%</view>
+                <view>---- todo:  制定的一些要完成具体事项</view>
+            </view>
+        </view>
+        <button class="welcome-btn" plain="true" bindtap="login">立即体验</button>
+    </view>
+    
+</view>

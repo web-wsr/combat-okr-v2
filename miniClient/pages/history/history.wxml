@@ -1,0 +1,16 @@
+<!--pages/history/history.wxml-->
+<view class="page-container">
+    <view class="todo-container">
+        <view class="todo-content">
+            <view class="todo-tip" wx:if="{{ todos.length === 0 }}">还没有完成相应的 Todo 哦, 加油</view>
+            <view class="todo-tip" wx:else>已完成的 Todos , 真棒</view>
+        </view>
+        <view class="todo-list">
+            <view class="todo-item {{item.status === 0 ? 'completed' : ''}}" wx:key="{{item.id}}" wx:for="{{ todos }}" data-id="{{item.id}}" data-index="{{index}}" bindtap="handleActionSheet">
+                <view class="todo-title">{{item.todo}}</view>
+                <view class="todo-time">创建时间：{{item.created_time}}</view>
+                <view class="todo-time" wx:if="{{item.completed_time}}">完成时间：{{item.completed_time}}</view>
+            </view>
+        </view>
+    </view>
+</view>
